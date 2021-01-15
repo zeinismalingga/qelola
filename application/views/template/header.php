@@ -43,9 +43,9 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-calculator"></i></div>
                                 Financial Calculator 
                             </a>
-                            <a class="nav-link" href="<?php echo base_url('financial_checkup') ?>">
+                            <a class="nav-link" href="<?php echo base_url('profil_risiko') ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-line"></i></div>
-                                Financial Checkup
+                                Profil Risiko
                             </a>
                         </div>
                     </div>

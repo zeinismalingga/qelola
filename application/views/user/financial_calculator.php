@@ -38,7 +38,7 @@
 				      <input type="text" name="i" class="form-control" placeholder="%">
 				    </div>
 				  </div>
-				  <button id="calculate" class="btn btn-primary btn-block">Hitung</button>
+				  <button id="calculate" onclick="hitung()" class="btn btn-primary btn-block">Hitung</button>
 				</form>
 		    </div>
 	    </div>

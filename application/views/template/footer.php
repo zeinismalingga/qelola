@@ -90,19 +90,17 @@
             }
 
             // MAIN
-            var calculate = document.getElementById('calculate');
-            if(calculate){
-                document.getElementById('calculate').onclick = () => {
-                    pmt = calculate();
-                    if ((pmt.m_pmt === "NaN") || (pmt.m_pmt === "Infinity")) {
-                        document.getElementById('result').classList.add('hidden');
-                        alert('Harap memasukkan nilai yang benar');
-                    } else {
-                        document.getElementById('m_pmt').value = pmt.m_pmt.toLocaleString('id');
-                        document.getElementById('y_pmt').value = pmt.y_pmt.toLocaleString('id');
-                        document.getElementById('result').classList.remove('hidden');
-                    }
+            function hitung(){
+                pmt = calculate();
+                if ((pmt.m_pmt === "NaN") || (pmt.m_pmt === "Infinity")) {
+                    document.getElementById('result').classList.add('hidden');
+                    alert('Harap memasukkan nilai yang benar');
+                } else {
+                    document.getElementById('m_pmt').value = pmt.m_pmt.toLocaleString('id');
+                    document.getElementById('y_pmt').value = pmt.y_pmt.toLocaleString('id');
+                    document.getElementById('result').classList.remove('hidden');
                 }
+                
             }
             
         </script>
